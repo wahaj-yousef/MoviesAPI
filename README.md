@@ -10,7 +10,14 @@
 5. Run your project and migrate your database, by [running](https://docs.vapor.codes/fluent/overview/#migrate) the migrate command in terminal.
   > You can also run this command through Xcode. The migrate command will check the database to see if any new migrations have been registered since it was last run. If there are new migrations, it will ask for a confirmation before running them.
 - The database schema look like this:
-![]()
+<img src="ERD.png" width="700">
 6. Run your project again to start using your server👏🏼
 
 ### API End pointes 
+
+| Method   | URL                                      | Description                              |
+| -------- | ---------------------------------------- | ---------------------------------------- |
+| `GET`    | `/movies`                             | Retrieve all movies.                      |
+| `GET`   | `/movies/id`                             |  Retrieve specific movie by id.                       |
+| `POST`    | `/movies`                          | Add movie.                       |
+| `POST`  | `/actor`                          | Add actor.                 |
