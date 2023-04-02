@@ -21,7 +21,7 @@
 <img src="ERD.png" width="700">
 6. Run your project again to start using the server👏🏼
 
-###🎢 API End pointes 
+### 🎢 API End pointes 
 
 | Method   | URL                                      | Description                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
