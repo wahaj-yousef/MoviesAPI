@@ -11,7 +11,7 @@
   > You can also run this command through Xcode. The migrate command will check the database to see if any new migrations have been registered since it was last run. If there are new migrations, it will ask for a confirmation before running them.
 - The database schema look like this:
 <img src="ERD.png" width="700">
-6. Run your project again to start using your server👏🏼
+6. Run your project again to start using the server👏🏼
 
 ### API End pointes 
 
