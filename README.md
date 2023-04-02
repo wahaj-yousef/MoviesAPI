@@ -20,4 +20,10 @@
 | `GET`    | `/movies`                             | Retrieve all movies.                      |
 | `GET`   | `/movies/id`                             |  Retrieve specific movie by id.                       |
 | `POST`    | `/movies`                          | Add movie.                       |
+| `GET`  | `/actor`                          | Retrieve all actors.                 |
+| `GET`   | `/actor/movieId`                             |  Retrieve specific actors by id.                       |
 | `POST`  | `/actor`                          | Add actor.                 |
+| `GET`  | `/director`                          | Retrieve all director.                 |
+| `GET`   | `/director/movieId`                             |  Retrieve specific directors by id.                       |
+| `POST`  | `/director`                          | Add director.                 |
+
