@@ -6,12 +6,12 @@ struct DirectorController: RouteCollection {
         let directors = routes.grouped("director")
         directors.get(use: index)
         directors.post(use: create)
-        directors.group(":movieId") { actor in
-            actor.get(use: getDirector)
-            actor.delete(use: delete)
+        directors.group(":movieId") { director in
+            director.get(use: getDirector)
         }
         
-        
+        directors.delete(":id", use: delete)
+
     }
     
     func create(_ req: Request) throws -> EventLoopFuture<Director> {
@@ -35,7 +35,7 @@ struct DirectorController: RouteCollection {
     }
     
     func delete(req: Request) throws -> EventLoopFuture<HTTPStatus> {
-        return Director.find(req.parameters.get("movieId"), on: req.db)
+        return Director.find(req.parameters.get("id"), on: req.db)
             .unwrap(or: Abort(.notFound))
             .flatMap { $0.delete(on: req.db) }
             .transform(to: .ok)

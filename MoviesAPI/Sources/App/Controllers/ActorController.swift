@@ -8,9 +8,9 @@ struct ActorController: RouteCollection {
         actors.post(use: create)
         actors.group(":movieId") { actor in
             actor.get(use: getActor)
-            actor.delete(use: delete)
         }
-        
+        actors.delete(":id", use: delete)
+
         
     }
     
@@ -35,7 +35,7 @@ struct ActorController: RouteCollection {
     }
     
     func delete(req: Request) throws -> EventLoopFuture<HTTPStatus> {
-        return Actor.find(req.parameters.get("movieId"), on: req.db)
+        return Actor.find(req.parameters.get("id"), on: req.db)
             .unwrap(or: Abort(.notFound))
             .flatMap { $0.delete(on: req.db) }
             .transform(to: .ok)
