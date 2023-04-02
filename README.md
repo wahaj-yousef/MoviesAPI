@@ -1,8 +1,16 @@
 # 🎥 MoviesAPI
 ### A Movies API created using Vapor, Fluent (ORM) and Postgres.
+<p float="center">
+<img src="https://avatars.githubusercontent.com/u/17364220?s=280&v=4" width="150">
 
-### You can use this project if you want to build a local movie API that views all movies and their directors and actors as well as adding and deleting more movies.
-### What you need to do :
+  <img src="https://user-images.githubusercontent.com/1342803/59051613-4dca0f00-885b-11e9-8ed7-509eacdf8f1c.png" width="250">
+  <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png" width="150" >
+  </p>
+
+
+#### You can use this project if you want to build a local movie API that views all movies and their directors and actors as well as adding and deleting movies that connected to your postgres database🍿.
+
+### ✨What you need to do :
 1.  Instal [Swift and Vapor Toolbox](https://docs.vapor.codes/install/macos/) 
 2. Create your Postgres Database
 3. Clone this project via xcode
